@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>QE Docs Reader</title>
+    <meta name="description" content="Unofficial, offline-capable reader for the Quantum ESPRESSO documentation: input references, user guides, release notes and PDFs with fast search." />
+    <meta name="theme-color" content="#9d2529" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      // Apply saved display settings before first paint (avoids a flash of the wrong theme).
+      try {
+        var s = JSON.parse(localStorage.getItem('qe-reader-settings') || '{}');
+        var r = document.documentElement;
+        if (s.theme) r.setAttribute('data-theme', s.theme);
+        if (s.fontScale) r.style.setProperty('--font-scale', String(s.fontScale));
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <noscript>This reader needs JavaScript. The original documentation is at https://www.quantum-espresso.org/Doc/</noscript>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

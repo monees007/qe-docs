@@ -1,0 +1,401 @@
+{
+  "source": "/home/claude/qe-docs-reader/source/qe-Doc",
+  "stats": {
+    "programs": 36,
+    "variables": 1247,
+    "guideChapters": 27,
+    "pdfs": 11,
+    "releaseVersions": 63,
+    "xrefEdges": 894
+  },
+  "warnings": [
+    "INPUT_BAND_INTERPOLATION.html: link to missing anchor #nosym (source) -> search link",
+    "INPUT_BAND_INTERPOLATION.html: link to missing anchor #nosym (source) -> search link",
+    "INPUT_BAND_INTERPOLATION.html: link to missing anchor #nosym (source) -> search link",
+    "INPUT_BAND_INTERPOLATION.html: link to missing anchor #nosym (source) -> search link",
+    "INPUT_CP.html: anchor \"X\" used twice",
+    "INPUT_CP.html: anchor \"lattice_type\" used twice",
+    "INPUT_CP.html: anchor \"v1\" used twice",
+    "INPUT_CP.html: anchor \"v2\" used twice",
+    "INPUT_CP.html: anchor \"v3\" used twice",
+    "INPUT_CP.html: anchor \"X\" used twice",
+    "INPUT_CP.html: link to missing anchor #0.D0 (source) -> unlinked",
+    "INPUT_CP.html: link to missing anchor #0.D0 (source) -> unlinked",
+    "INPUT_MATDYN.html: anchor \"nq\" used twice",
+    "INPUT_MATDYN.html: anchor \"q_x\" used twice",
+    "INPUT_MATDYN.html: anchor \"q_y\" used twice",
+    "INPUT_MATDYN.html: anchor \"q_z\" used twice",
+    "INPUT_NEB.html: anchor \"tot_charge_list\" used twice",
+    "INPUT_NEB.html: anchor \"tot_charge_list\" used twice",
+    "INPUT_PH.html: anchor \"lmultipole\" used twice",
+    "INPUT_PH.html: 1 variable(s) outside any namelist/card in the source: lmultipole-2",
+    "INPUT_PP.html: anchor \"spin_component\" used twice",
+    "INPUT_PP.html: anchor \"spin_component\" used twice",
+    "INPUT_PP.html: anchor \"emin\" used twice",
+    "INPUT_PP.html: anchor \"emax\" used twice",
+    "INPUT_PP.html: anchor \"spin_component\" used twice",
+    "INPUT_PP.html: anchor \"spin_component\" used twice",
+    "INPUT_PP.html: anchor \"spin_component\" used twice",
+    "INPUT_PP.html: anchor \"spin_component\" used twice",
+    "INPUT_PP.html: anchor \"e1\" used twice",
+    "INPUT_PP.html: anchor \"x0\" used twice",
+    "INPUT_PP.html: anchor \"nx\" used twice",
+    "INPUT_PP.html: anchor \"e1\" used twice",
+    "INPUT_PP.html: anchor \"e2\" used twice",
+    "INPUT_PP.html: anchor \"x0\" used twice",
+    "INPUT_PP.html: anchor \"nx\" used twice",
+    "INPUT_PP.html: anchor \"ny\" used twice",
+    "INPUT_PP.html: anchor \"nx\" used twice",
+    "INPUT_PP.html: anchor \"ny\" used twice",
+    "INPUT_PPRISM.html: anchor \"x0\" used twice",
+    "INPUT_PPRISM.html: anchor \"nx\" used twice",
+    "INPUT_PPRISM.html: anchor \"e1\" used twice",
+    "INPUT_PPRISM.html: anchor \"x0\" used twice",
+    "INPUT_PPRISM.html: anchor \"nx\" used twice",
+    "INPUT_PPRISM.html: anchor \"e1\" used twice",
+    "INPUT_PPRISM.html: anchor \"e2\" used twice",
+    "INPUT_PPRISM.html: anchor \"x0\" used twice",
+    "INPUT_PPRISM.html: anchor \"nx\" used twice",
+    "INPUT_PPRISM.html: anchor \"ny\" used twice",
+    "INPUT_PPRISM.html: anchor \"nx\" used twice",
+    "INPUT_PPRISM.html: anchor \"ny\" used twice",
+    "INPUT_PPRISM.html: link to missing anchor #fileplot (source) -> search link",
+    "INPUT_PW.html: anchor \"X\" used twice",
+    "INPUT_PW.html: anchor \"X\" used twice",
+    "INPUT_PW.html: anchor \"X\" used twice",
+    "INPUT_PW.html: anchor \"X\" used twice",
+    "INPUT_PW.html: anchor \"Molecule\" used twice",
+    "INPUT_PW.html: anchor \"label\" used twice",
+    "INPUT_PW.html: anchor \"label\" used twice",
+    "INPUT_PW.html: anchor \"label\" used twice",
+    "INPUT_PW.html: anchor \"label\" used twice",
+    "INPUT_PW.html: anchor \"u_val\" used twice",
+    "INPUT_PW.html: anchor \"label\" used twice",
+    "INPUT_PW.html: anchor \"j0_val\" used twice",
+    "INPUT_PW.html: anchor \"label\" used twice",
+    "INPUT_PW.html: anchor \"label\" used twice",
+    "INPUT_PW.html: anchor \"label\" used twice",
+    "INPUT_PW.html: anchor \"u_val\" used twice",
+    "INPUT_PW.html: anchor \"label\" used twice",
+    "INPUT_PW.html: anchor \"alpha_val\" used twice",
+    "INPUT_PW.html: anchor \"eigenstate\" used twice",
+    "INPUT_PW.html: link to missing anchor #ignore_wolfe (source) -> search link",
+    "INPUT_PW.html: link to missing anchor #ignore_wolfe (source) -> search link",
+    "INPUT_PW.html: link to missing anchor #domag (source) -> search link",
+    "INPUT_PW.html: link to missing anchor #domag (source) -> search link",
+    "INPUT_PW.html: link to missing anchor #trust_radius (source) -> search link",
+    "INPUT_PW.html: link to missing anchor #fpc_tempw (source) -> search link",
+    "INPUT_PW.html: link to missing anchor #nq1x (source) -> search link",
+    "INPUT_PW.html: link to missing anchor #nq2x (source) -> search link",
+    "INPUT_PW.html: link to missing anchor #nq3x (source) -> search link",
+    "INPUT_PWCOND.html: anchor \"nenergy\" used twice",
+    "pw_user_guide: scheme-less link \"ipi-code.org\" rewritten to https://ipi-code.org",
+    "pw_user_guide: scheme-less link \"ipi-code.org\" rewritten to https://ipi-code.org"
+  ],
+  "excluded": [
+    {
+      "file": "INPUT_PH.xml",
+      "reason": "empty placeholder in the source (175 bytes)"
+    },
+    {
+      "file": "INPUT_PH.txt",
+      "reason": "empty placeholder in the source (71 bytes)"
+    },
+    {
+      "file": "user_guide/node1.html (\"Contents\")",
+      "reason": "LaTeX2HTML navigation page (contents / about this document)"
+    },
+    {
+      "file": "user_guide/node23.html (\"About this document ...\")",
+      "reason": "LaTeX2HTML navigation page (contents / about this document)"
+    },
+    {
+      "file": "pw_user_guide/node1.html (\"Contents\")",
+      "reason": "LaTeX2HTML navigation page (contents / about this document)"
+    },
+    {
+      "file": "pw_user_guide/node22.html (\"About this document ...\")",
+      "reason": "LaTeX2HTML navigation page (contents / about this document)"
+    },
+    {
+      "file": "ph_user_guide/node1.html (\"Contents\")",
+      "reason": "LaTeX2HTML navigation page (contents / about this document)"
+    },
+    {
+      "file": "ph_user_guide/node20.html (\"About this document ...\")",
+      "reason": "LaTeX2HTML navigation page (contents / about this document)"
+    },
+    {
+      "file": "pp_user_guide/node1.html (\"Contents\")",
+      "reason": "LaTeX2HTML navigation page (contents / about this document)"
+    },
+    {
+      "file": "pp_user_guide/node15.html (\"About this document ...\")",
+      "reason": "LaTeX2HTML navigation page (contents / about this document)"
+    },
+    {
+      "file": "neb_user_guide/node1.html (\"Contents\")",
+      "reason": "LaTeX2HTML navigation page (contents / about this document)"
+    },
+    {
+      "file": "neb_user_guide/node10.html (\"About this document ...\")",
+      "reason": "LaTeX2HTML navigation page (contents / about this document)"
+    },
+    {
+      "file": "index.html",
+      "reason": "web-server directory listing"
+    },
+    {
+      "file": "quantum_espresso.png",
+      "reason": "logo image (not documentation content)"
+    },
+    {
+      "file": "user_guide_PDF/index.html",
+      "reason": "web-server directory listing"
+    },
+    {
+      "file": "INPUT_ALL_CURRENTS.txt",
+      "reason": "same content as INPUT_ALL_CURRENTS.xml in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_BANDS.txt",
+      "reason": "same content as INPUT_BANDS.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_BANDS.xml",
+      "reason": "same content as INPUT_BANDS.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_BAND_INTERPOLATION.txt",
+      "reason": "same content as INPUT_BAND_INTERPOLATION.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_BAND_INTERPOLATION.xml",
+      "reason": "same content as INPUT_BAND_INTERPOLATION.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_CP.txt",
+      "reason": "same content as INPUT_CP.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_CP.xml",
+      "reason": "same content as INPUT_CP.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_CPPP.txt",
+      "reason": "same content as INPUT_CPPP.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_CPPP.xml",
+      "reason": "same content as INPUT_CPPP.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_D3HESS.txt",
+      "reason": "same content as INPUT_D3HESS.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_D3HESS.xml",
+      "reason": "same content as INPUT_D3HESS.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_DOS.txt",
+      "reason": "same content as INPUT_DOS.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_DOS.xml",
+      "reason": "same content as INPUT_DOS.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_DYNMAT.txt",
+      "reason": "same content as INPUT_DYNMAT.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_DYNMAT.xml",
+      "reason": "same content as INPUT_DYNMAT.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_Davidson.txt",
+      "reason": "same content as INPUT_Davidson.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_EELS.txt",
+      "reason": "same content as INPUT_EELS.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_HP.txt",
+      "reason": "same content as INPUT_HP.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_HP.xml",
+      "reason": "same content as INPUT_HP.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_LD1.txt",
+      "reason": "same content as INPUT_LD1.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_Lanczos.txt",
+      "reason": "same content as INPUT_Lanczos.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_MATDYN.txt",
+      "reason": "same content as INPUT_MATDYN.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_MATDYN.xml",
+      "reason": "same content as INPUT_MATDYN.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_Magnon.txt",
+      "reason": "same content as INPUT_Magnon.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_NEB.txt",
+      "reason": "same content as INPUT_NEB.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_NEB.xml",
+      "reason": "same content as INPUT_NEB.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_OSCDFT.txt",
+      "reason": "same content as INPUT_OSCDFT.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_OSCDFT.xml",
+      "reason": "same content as INPUT_OSCDFT.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_OSCDFT_ET.txt",
+      "reason": "same content as INPUT_OSCDFT_ET.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_OSCDFT_ET.xml",
+      "reason": "same content as INPUT_OSCDFT_ET.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_OSCDFT_PP.txt",
+      "reason": "same content as INPUT_OSCDFT_PP.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_OSCDFT_PP.xml",
+      "reason": "same content as INPUT_OSCDFT_PP.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_POSTAHC.txt",
+      "reason": "same content as INPUT_POSTAHC.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_POSTAHC.xml",
+      "reason": "same content as INPUT_POSTAHC.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_PPACF.txt",
+      "reason": "same content as INPUT_PPACF.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_PPACF.xml",
+      "reason": "same content as INPUT_PPACF.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_PPRISM.txt",
+      "reason": "same content as INPUT_PPRISM.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_PPRISM.xml",
+      "reason": "same content as INPUT_PPRISM.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_PROJWFC.txt",
+      "reason": "same content as INPUT_PROJWFC.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_PROJWFC.xml",
+      "reason": "same content as INPUT_PROJWFC.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_PW.txt",
+      "reason": "same content as INPUT_PW.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_PW.xml",
+      "reason": "same content as INPUT_PW.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_PWCOND.txt",
+      "reason": "same content as INPUT_PWCOND.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_PWCOND.xml",
+      "reason": "same content as INPUT_PWCOND.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_Q2R.txt",
+      "reason": "same content as INPUT_Q2R.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_Q2R.xml",
+      "reason": "same content as INPUT_Q2R.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_Spectrum.txt",
+      "reason": "same content as INPUT_Spectrum.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_bgw2pw.txt",
+      "reason": "same content as INPUT_bgw2pw.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_bgw2pw.xml",
+      "reason": "same content as INPUT_bgw2pw.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_kcw.txt",
+      "reason": "same content as INPUT_kcw.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_kcw.xml",
+      "reason": "same content as INPUT_kcw.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_molecularpdos.txt",
+      "reason": "same content as INPUT_molecularpdos.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_molecularpdos.xml",
+      "reason": "same content as INPUT_molecularpdos.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_pw2bgw.txt",
+      "reason": "same content as INPUT_pw2bgw.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_pw2bgw.xml",
+      "reason": "same content as INPUT_pw2bgw.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_pw2gw.txt",
+      "reason": "same content as INPUT_pw2gw.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_pw2gw.xml",
+      "reason": "same content as INPUT_pw2gw.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_pw2wannier90.txt",
+      "reason": "same content as INPUT_pw2wannier90.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_pw2wannier90.xml",
+      "reason": "same content as INPUT_pw2wannier90.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_wannier2pw.txt",
+      "reason": "same content as INPUT_wannier2pw.html in another format (XML used for cross-checking)"
+    },
+    {
+      "file": "INPUT_wannier2pw.xml",
+      "reason": "same content as INPUT_wannier2pw.html in another format (XML used for cross-checking)"
+    }
+  ]
+}

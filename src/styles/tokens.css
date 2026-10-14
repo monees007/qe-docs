@@ -1,0 +1,254 @@
+/*
+ * Design tokens.
+ * Verified from the QE home-page stylesheet (QETheme by NEWEB, uploaded qe-style.css):
+ *   #9d2529 accent red, rgba(157,37,41,.17/.23) accent tints, #404040 text,
+ *   #6b6b6b secondary text, #e4e4e4 / #e8e8e8 neutral borders, rgba(39,94,254,.3) focus.
+ * Verified from the helpdoc INPUT_*.html files: #214478 namelist, #782167 card,
+ *   #008000 flag (darkened to #007a00 to keep 4.5:1 on tinted surfaces),
+ *   #00395a / #005789 header blues.
+ * Pending: the site's WordPress preset font family and primary/base/contrast presets
+ *   are defined outside qe-style.css; the system UI font is used until they are supplied.
+ * All text tokens below were checked for WCAG AA (>= 4.5:1) on --bg and --surface-2.
+ */
+:root {
+  --font-scale: 1;
+  --line-height: 1.65;
+  --letter-spacing: 0;
+  --word-spacing: 0;
+  --measure: 76ch;
+  --font-sys: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* Lato: visual match to the QE website typography (from the user's screenshot) */
+  --font-brand: 'Lato', var(--font-sys);
+  --font-ui: var(--font-brand);
+  --font-read: var(--font-brand);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 16px;
+  --header-h: 84px;
+  --sidebar-w: 288px;
+  --toc-w: 264px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 160ms;
+}
+
+/* ---------------- light (default) ---------------- */
+:root,
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f6f6f6;
+  --surface-3: #ececec;
+  --text: #404040;
+  --text-strong: #1d1d1d;
+  --text-muted: #6b6b6b;
+  --border: #e4e4e4;
+  --border-strong: #c8c8c8;
+  --accent: #9d2529;
+  --accent-strong: #7d1d21;
+  --accent-contrast: #ffffff;
+  --accent-soft: rgba(157, 37, 41, 0.07);
+  --accent-line: rgba(157, 37, 41, 0.23);
+  --link: #9d2529;
+  --nl: #214478;
+  --card: #782167;
+  --flag: #007a00;
+  --doc-blue: #005789;
+  --doc-blue-deep: #00395a;
+  --code-bg: #f4f4f4;
+  --mark: #fff1a8;
+  --focus: #275efe;
+  --focus-soft: rgba(39, 94, 254, 0.3);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.08);
+  --scrim: rgba(20, 20, 20, 0.38);
+  /* graph (dataviz reference palette, slots 1-3, validated all-pairs) */
+  --viz-1: #2a78d6;
+  --viz-2: #eb6834;
+  --viz-3: #1baf7a;
+  --viz-edge: #8b8b8b;
+  --pdf-filter: none;
+}
+
+/* ---------------- dark ---------------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']):not([data-theme='sepia']):not([data-theme='contrast']) {
+    color-scheme: dark;
+    --bg: #141517;
+    --surface: #18191c;
+    --surface-2: #202125;
+    --surface-3: #2b2c31;
+    --text: #e2e2e2;
+    --text-strong: #f6f6f6;
+    --text-muted: #a6a6a6;
+    --border: #2f3136;
+    --border-strong: #4a4c52;
+    --accent: #f08a8d;
+    --accent-strong: #f6a9ab;
+    --accent-contrast: #1a0507;
+    --accent-soft: rgba(240, 138, 141, 0.1);
+    --accent-line: rgba(240, 138, 141, 0.3);
+    --link: #f08a8d;
+    --nl: #93b4f0;
+    --card: #e29ad3;
+    --flag: #78d178;
+    --doc-blue: #7fb8de;
+    --doc-blue-deep: #0d2b40;
+    --code-bg: #1f2024;
+    --mark: #5a4a00;
+    --focus: #8aa6ff;
+    --focus-soft: rgba(138, 166, 255, 0.35);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.45);
+    --scrim: rgba(0, 0, 0, 0.6);
+    --viz-1: #3987e5;
+    --viz-2: #d95926;
+    --viz-3: #199e70;
+    --viz-edge: #7a7c82;
+  }
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #141517;
+  --surface: #18191c;
+  --surface-2: #202125;
+  --surface-3: #2b2c31;
+  --text: #e2e2e2;
+  --text-strong: #f6f6f6;
+  --text-muted: #a6a6a6;
+  --border: #2f3136;
+  --border-strong: #4a4c52;
+  --accent: #f08a8d;
+  --accent-strong: #f6a9ab;
+  --accent-contrast: #1a0507;
+  --accent-soft: rgba(240, 138, 141, 0.1);
+  --accent-line: rgba(240, 138, 141, 0.3);
+  --link: #f08a8d;
+  --nl: #93b4f0;
+  --card: #e29ad3;
+  --flag: #78d178;
+  --doc-blue: #7fb8de;
+  --doc-blue-deep: #0d2b40;
+  --code-bg: #1f2024;
+  --mark: #5a4a00;
+  --focus: #8aa6ff;
+  --focus-soft: rgba(138, 166, 255, 0.35);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.45);
+  --scrim: rgba(0, 0, 0, 0.6);
+  --viz-1: #3987e5;
+  --viz-2: #d95926;
+  --viz-3: #199e70;
+  --viz-edge: #7a7c82;
+}
+
+/* ---------------- sepia (reading comfort) ---------------- */
+:root[data-theme='sepia'] {
+  color-scheme: light;
+  --bg: #f7f1e5;
+  --surface: #fbf7ef;
+  --surface-2: #efe6d4;
+  --surface-3: #e6dac3;
+  --text: #3d3428;
+  --text-strong: #241d14;
+  --text-muted: #685b49;
+  --border: #e2d5bd;
+  --border-strong: #c9b896;
+  --accent: #93221f;
+  --accent-strong: #741a17;
+  --accent-contrast: #ffffff;
+  --accent-soft: rgba(147, 34, 31, 0.08);
+  --accent-line: rgba(147, 34, 31, 0.25);
+  --link: #93221f;
+  --nl: #214478;
+  --card: #782167;
+  --flag: #1f6b1f;
+  --code-bg: #f0e7d6;
+  --mark: #f3dc7a;
+}
+
+/* ---------------- high contrast ---------------- */
+:root[data-theme='contrast'] {
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f2f2f2;
+  --surface-3: #e0e0e0;
+  --text: #000000;
+  --text-strong: #000000;
+  --text-muted: #1f1f1f;
+  --border: #000000;
+  --border-strong: #000000;
+  --accent: #8a0000;
+  --accent-strong: #5c0000;
+  --accent-contrast: #ffffff;
+  --accent-soft: #ffe9e9;
+  --accent-line: #8a0000;
+  --link: #8a0000;
+  --nl: #00256b;
+  --card: #5b0050;
+  --flag: #005400;
+  --code-bg: #f2f2f2;
+  --mark: #ffe100;
+  --focus: #0033cc;
+  --focus-soft: #0033cc;
+  --shadow: 0 0 0 2px #000;
+}
+:root[data-theme='contrast-dark'] {
+  color-scheme: dark;
+  --bg: #000000;
+  --surface: #000000;
+  --surface-2: #141414;
+  --surface-3: #262626;
+  --text: #ffffff;
+  --text-strong: #ffffff;
+  --text-muted: #e6e6e6;
+  --border: #ffffff;
+  --border-strong: #ffffff;
+  --accent: #ffb3b6;
+  --accent-strong: #ffd6d7;
+  --accent-contrast: #000000;
+  --accent-soft: #2a0000;
+  --accent-line: #ffb3b6;
+  --link: #ffb3b6;
+  --nl: #bcd3ff;
+  --card: #ffc2f1;
+  --flag: #9dff9d;
+  --doc-blue: #9fd3ff;
+  --doc-blue-deep: #001b2e;
+  --code-bg: #141414;
+  --mark: #6b5a00;
+  --focus: #ffd400;
+  --focus-soft: #ffd400;
+  --shadow: 0 0 0 2px #fff;
+  --scrim: rgba(0, 0, 0, 0.8);
+  --viz-1: #3987e5;
+  --viz-2: #d95926;
+  --viz-3: #199e70;
+  --viz-edge: #bdbdbd;
+  --pdf-filter: invert(1) hue-rotate(180deg);
+}
+:root[data-theme='dark'][data-pdf-dark='true'] {
+  --pdf-filter: invert(0.88) hue-rotate(180deg);
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-theme='system'][data-pdf-dark='true'] {
+    --pdf-filter: invert(0.88) hue-rotate(180deg);
+  }
+}
+
+/* ---------------- reader fonts ---------------- */
+:root[data-font='system'] {
+  --font-read: var(--font-sys);
+}
+:root[data-font='serif'] {
+  --font-read: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+}
+:root[data-font='atkinson'] {
+  --font-read: 'Atkinson Hyperlegible', var(--font-sys);
+}
+:root[data-font='opendyslexic'] {
+  --font-read: 'OpenDyslexic', var(--font-sys);
+}
+:root[data-ui-font='reader'] {
+  --font-ui: var(--font-read);
+}

@@ -70,7 +70,40 @@ npm run build        # re-generates public/data, verifies it, rebuilds the app
 You can also drop a manually downloaded copy into `source/qe-Doc/`, or point at any folder:
 `npm run ingest -- --source /path/to/Doc`.
 
-## Deploying
+## Hosting on GitHub Pages
+
+The repository includes `.github/workflows/deploy-pages.yml`. It builds the site on every push to `main`
+and publishes it with GitHub Actions. The deploy path is detected automatically:
+`https://<user>.github.io/<repo>/` for a project site, or `/` for a `<user>.github.io` repository or a custom
+domain.
+
+1. Create a repository on GitHub. It must be **public** on a free plan; private repositories need GitHub
+   Pro, Team or Enterprise.
+2. Push this folder to it:
+   ```bash
+   cd qe-docs-reader
+   git init -b main
+   git add .
+   git commit -m "QE Docs Reader"
+   git remote add origin https://github.com/<user>/<repo>.git
+   git push -u origin main
+   ```
+3. On GitHub, open **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
+4. Open the **Actions** tab. Re-run the "Deploy to GitHub Pages" workflow if the first run started before
+   step 3. A run takes about 2 minutes, and its summary shows the site URL.
+
+Every later push to `main` redeploys. To refresh the documentation, run `npm run fetch-docs`, then
+commit `source/qe-Doc` and push.
+
+Notes:
+
+- **Deep links work.** GitHub Pages has no server-side routing, so `dist/404.html` (a copy of the app)
+  loads the right page. The first direct visit to a deep link therefore carries an HTTP 404 status, but
+  visitors see the page normally. After the first visit, the service worker serves every page directly.
+- **`.nojekyll`** is included, in case you ever publish `dist/` from a branch instead of using Actions.
+- **Custom domain:** set it in Settings → Pages. The workflow then builds for `/` automatically.
+
+## Deploying elsewhere
 
 - **Any static host** (nginx, Apache, Netlify, GitHub Pages, S3…). Serve `dist/` and send unknown paths to
   `index.html`. For nginx: `try_files $uri $uri/ /index.html;`. `dist/404.html` is a copy of `index.html`

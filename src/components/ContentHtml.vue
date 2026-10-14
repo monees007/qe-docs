@@ -36,6 +36,11 @@ function enhance() {
       const h = a.getAttribute('href') || '';
       if (h.startsWith('/') && !h.startsWith(base + '/')) a.setAttribute('href', base + h);
     });
+    // images bundled with the guides (/docs/...) live under the deploy base too
+    el.querySelectorAll<HTMLImageElement>('img[src^="/"]').forEach((img) => {
+      const s = img.getAttribute('src') || '';
+      if (!s.startsWith(base + '/')) img.setAttribute('src', base + s);
+    });
   }
   // external links: tell screen-reader users they open a new tab
   el.querySelectorAll<HTMLAnchorElement>('a.ext').forEach((a) => {
